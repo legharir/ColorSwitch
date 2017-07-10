@@ -4,8 +4,8 @@ function Circle() {
 	this.y = height * 0.8;
 	this.x = width / 2;
 
-	this.gravity = 0.4;
-	this.lift = -4;
+	this.gravity = 0.17;
+	this.lift = -2;
 	this.velocity = 0;
 
 	this.show = function() {
@@ -17,8 +17,8 @@ function Circle() {
 		this.velocity += this.gravity;
 		this.y += this.velocity;
 
-		if (this.velocity <= -5) {
-			this.velocity = -5;
+		if (this.velocity <= -3) {
+			this.velocity = -3;
 		}
 
 		if (this.y + this.radius > height) {
@@ -29,7 +29,7 @@ function Circle() {
 
 	this.up = function() {
 		this.velocity = this.lift;
-		this.velocity += this.lift;
+		this.velocity += this.lift * 0.7;
 	}
 
 	this.changeColour = function() {

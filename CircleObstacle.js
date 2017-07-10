@@ -4,8 +4,8 @@ function CircleObstacle(x, y) {
 	this.outerRadius = 80;
 	this.innerRadius = 65;
 	this.rotateOffset = 0;
+	
 	this.n = colours.length;
-	this.rotateOffset = 0;
 	this.botColour = [];
 	this.topColour = [];
 
