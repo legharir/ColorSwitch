@@ -5,5 +5,5 @@ var colours = [
 	[153, 0, 153]
 ];
 
-var OBSTACLE_VELOCITY = 2;
+var OBSTACLE_VELOCITY = 1;
 var CIRCLE_BOUNDARY = 600 * 0.6;
